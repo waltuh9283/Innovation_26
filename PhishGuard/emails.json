@@ -1,0 +1,100 @@
+[
+    {
+        "sender":  "Netflix Support",
+        "subject": "Payment Failed",
+        "message": "Update your payment details immediately or your account will be suspended.",
+        "link":    "netfIix-security.xyz",
+        "answer":  "phishing",
+        "tip":     "Fake Netflix domain using a lookalike letter",
+        "reasons": [
+            "Lookalike domain: capital 'I' replaces lowercase 'l' in 'Netflix'",
+            "Unofficial TLD: '.xyz' is not used by Netflix (real: netflix.com)",
+            "Urgent language: 'immediately' pressures you to act without thinking",
+            "Threat of suspension: classic scare tactic to steal credentials"
+        ]
+    },
+    {
+        "sender":  "Swinburne University",
+        "subject": "Semester Timetable",
+        "message": "Your semester timetable is now available on the student portal.",
+        "link":    "swinburne.edu.au",
+        "answer":  "legit",
+        "tip":     "Genuine university email no red flags",
+        "reasons": [
+            "Official domain: '.edu.au' is reserved for Australian universities",
+            "No urgency or threats: neutral, informational tone",
+            "No request for personal data or login credentials",
+            "Message matches what you'd expect from a university system"
+        ]
+    },
+    {
+        "sender":  "PayPal Security",
+        "subject": "Urgent Login Alert",
+        "message": "Suspicious activity detected. Verify now to avoid suspension.",
+        "link":    "paypal-account-check.com",
+        "answer":  "phishing",
+        "tip":     "Fake PayPal using a hyphenated third-party domain",
+        "reasons": [
+            "Fake domain: PayPal only uses 'paypal.com' never a hyphenated domain",
+            "Urgent subject line: 'Urgent' is a common phishing trigger word",
+            "Vague threat: 'suspicious activity' with no specific details",
+            "Pressures immediate action: 'Verify now to avoid suspension'"
+        ]
+    },
+    {
+        "sender":  "Spotify",
+        "subject": "New Playlist For You",
+        "message": "We picked some songs based on your recent listening history.",
+        "link":    "spotify.com",
+        "answer":  "legit",
+        "tip":     "Genuine Spotify email: standard marketing message",
+        "reasons": [
+            "Official domain: 'spotify.com' with no extra subdomains or hyphens",
+            "No urgency or threats: a friendly, low-pressure message",
+            "Personalised but benign: references listening history, not credentials",
+            "No links to login pages or requests for personal information"
+        ]
+    },
+    {
+        "sender":  "ATO Refund Centre",
+        "subject": "Tax Refund Available",
+        "message": "A tax refund is ready. Claim within 24 hours or it will expire.",
+        "link":    "ato-refund-fast.net",
+        "answer":  "phishing",
+        "tip":     "Fake ATO using wrong TLD and artificial deadline",
+        "reasons": [
+            "Wrong TLD: Australian Tax Office only uses 'ato.gov.au', never '.net'",
+            "Artificial deadline: '24 hours' creates panic to skip verification",
+            "Too good to be true: unexpected refunds are a classic phishing lure",
+            "Hyphenated domain: 'ato-refund-fast' mimics ATO but is unrelated"
+        ]
+    },
+    {
+        "sender":  "GitHub",
+        "subject": "New Sign-In Detected",
+        "message": "A new login was detected on your account from Melbourne, Australia.",
+        "link":    "github.com",
+        "answer":  "legit",
+        "tip":     "Genuine GitHub security notice",
+        "reasons": [
+            "Official domain: 'github.com' with no modifications",
+            "Specific detail: includes city/country: phishing emails are usually vague",
+            "No action demanded: informs you without pressuring an immediate click",
+            "Standard security notification format used by real platforms"
+        ]
+    },
+    {
+        "sender":  "Google Security",
+        "subject": "Account Verification Required",
+        "message": "Verify your identity immediately to prevent your account being suspended.",
+        "link":    "accounts.google.verify-user.net",
+        "answer":  "phishing",
+        "tip":     "Subdomain trick: the real domain is verify-user.net, not google.com",
+        "reasons": [
+            "Subdomain spoofing: 'accounts.google' is a subdomain of 'verify-user.net'",
+            "Real domain rule: the actual domain is always the part before the last '/'",
+            "Urgent language: 'immediately' and 'suspended' push you to click fast",
+            "Google never asks you to verify via a non-google.com link"
+        ]
+    }
+]
