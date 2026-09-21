@@ -1,4 +1,6 @@
 """PhishGuard - Cybersecurity Awareness Simulator."""
+#CURRENT CODE IS FORK OF PHISHGUARD - CHANGE ACCORDINGLY
+#PSEUDCODE FOR STREAMLIT VERSION OF PHISHGUARD
 import pygame, sys, json, random, os  
 pygame.init()  
 # ── Window & colours ──────────────────────────────────────────────────────────
@@ -295,3 +297,87 @@ if __name__ == "__main__":  # only run the game loop when this script is execute
 
         DRAW_FUNCTIONS[game_state["state"]]()
         pygame.display.flip()
+"""
+
+phishing.py - Phishing Awareness module
+=========================================
+Owns: comparing a genuine vs. suspicious Medibank-style email side by
+side and letting the student judge which is which (FR02).
+
+Reference: Report section 1.1.1 (module description),
+Table 3.4.2 (phishing.py row).
+
+# ---- IMPORTS (pseudocode) ----
+# import streamlit as st
+# import content
+# import ui
+
+
+# ---------------------------------------------------------------
+# FUNCTION: render()
+# PURPOSE: Main entry point, called by app.py's router when
+#          st.session_state.page == "phishing".
+# ---------------------------------------------------------------
+def render():
+    # items = content.load_phishing()
+    # total = LENGTH of items
+    # index = st.session_state.question_index
+    #
+    # IF index >= total:
+    #     CALL ui.results_screen(st.session_state.score, total, "Phishing Awareness")
+    #     RETURN
+    #
+    # current_item = items[index]
+    #
+    # CALL ui.progress_bar(index + 1, total)
+    # CALL show_comparison(current_item)
+    #
+    # DISPLAY radio/buttons: "Which one is suspicious?" -> genuine / suspicious
+    # IF student selects an answer:
+    #     CALL check_answer(choice, current_item)
+    #     CALL show_indicators(current_item)
+    #     CALL ui.next_button()
+    #
+    # CALL ui.return_button()
+    pass
+
+
+# ---------------------------------------------------------------
+# FUNCTION: show_comparison(item)
+# PURPOSE: Display the genuine and suspicious email side by side
+#          using st.columns (report 3.3.3).
+# ---------------------------------------------------------------
+def show_comparison(item):
+    # CREATE two columns: left, right
+    # IN left column:  DISPLAY item["genuine_email"]
+    # IN right column: DISPLAY item["suspicious_email"]
+    # (order of genuine/suspicious could be randomised per item to
+    #  avoid students learning "left is always fake")
+    pass
+
+
+# ---------------------------------------------------------------
+# FUNCTION: check_answer(choice, item)
+# PURPOSE: Compare the student's selection to the correct answer,
+#          update the session score (FR03, FR06).
+# ---------------------------------------------------------------
+def check_answer(choice, item):
+    # is_correct = (choice == item["correct_answer"])
+    # IF is_correct:
+    #     INCREMENT st.session_state.score
+    # APPEND is_correct to st.session_state.answered
+    # RETURN is_correct
+    pass
+
+
+# ---------------------------------------------------------------
+# FUNCTION: show_indicators(item)
+# PURPOSE: After answering, highlight the specific red flags:
+#          sender domain, urgency language, link mismatch.
+# ---------------------------------------------------------------
+def show_indicators(item):
+    # FOR EACH indicator IN item["indicators"]:
+    #     DISPLAY indicator as a bullet point
+    #     (e.g. "Sender domain is 'medibank-support.co' not 'medibank.com.au'")
+    pass
+"""
