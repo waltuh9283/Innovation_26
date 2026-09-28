@@ -3,7 +3,7 @@
 from tkinter import font
 
 # ---- IMPORTS  ----
-#import streamlit as st
+import streamlit as st
 #import content
 #import ui
 import pygame, sys, json, random, os  
