@@ -1,16 +1,12 @@
 """
 oshc.py - Medibank OSHC Awareness module
 =========================================
-Owns: an introduction screen, plain-language OSHC explainer sections,
-each followed by a short comprehension question (FR05), and a results
-screen.
+Owns: Main functions for Medibank OSHC Awareness module. This is a self-contained
+module that can be run on its own (streamlit run oshc.py) or imported into
+app.py (streamlit run app.py) as part of the larger Cybersecurity and OSHC
+application. The module is a short interactive activity that teaches students
+the basics of OSHC (Overseas Student Health Cover) and tests their understanding.
 
-Reference: Report section 1.1.3 (Accessibility) and 1.1.1,
-Table 3.4.2 (oshc.py row), sections 3.3.1 - 3.3.3.
-
-Flow:  intro  ->  activity (section + question, repeated)  ->  results
-The current screen is stored in st.session_state.oshc_stage, the same
-single-variable approach app.py uses for st.session_state.page.
 """
 
 import streamlit as st

@@ -3,7 +3,7 @@
 import json, os
 import streamlit as st
 
-#CAN CHANGE DIRECTORY PATH LATERIF REQUIRED
+#CAN CHANGE DIRECTORY PATH LATER IF REQUIRED
 #CONTENT_DIR = os.path.join(os.path.dirname(__file__), "content")
 
 @st.cache_data
