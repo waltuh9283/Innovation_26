@@ -1,23 +1,23 @@
 """
 oshc.py - Medibank OSHC Awareness module
 =========================================
-Owns: an introduction screen, plain-language OSHC explainer sections,
-each followed by a short comprehension question (FR05), and a results
-screen.
+Owns: Main functions for Medibank OSHC Awareness module. This is a self-contained
+module that can be run on its own (streamlit run oshc.py) or imported into
+app.py (streamlit run app.py) as part of the larger Cybersecurity and OSHC
+application. The module is a short interactive activity that teaches students
+the basics of OSHC (Overseas Student Health Cover) and tests their understanding.
 
-Reference: Report section 1.1.3 (Accessibility) and 1.1.1,
-Table 3.4.2 (oshc.py row), sections 3.3.1 - 3.3.3.
-
-Flow:  intro  ->  activity (section + question, repeated)  ->  results
-The current screen is stored in st.session_state.oshc_stage, the same
-single-variable approach app.py uses for st.session_state.page.
 """
 
 import streamlit as st
-
+import os
 import content  # content.load_oshc() reads content/oshc.json
 
-
+#Directory paths for assets (fonts, images, icons)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+FONTS_DIR = os.path.join(BASE_DIR, "assets", "fonts")
+IMAGES_DIR = os.path.join(BASE_DIR, "assets", "images")
+ICONS_DIR = os.path.join(BASE_DIR, "assets", "icons")
 # ---------------------------------------------------------------
 # STATE HELPERS
 # Streamlit reruns the whole script on every click, so anything that
@@ -69,7 +69,6 @@ def return_to_menu():
 def restart():
     reset_oshc()
 
-
 # ---------------------------------------------------------------
 # SCREEN: Introduction (shown on first load)
 # ---------------------------------------------------------------
@@ -100,7 +99,6 @@ def show_section(item):
 def comprehension_check(item, total):
     index = st.session_state.oshc_index
     st.markdown(f"**{item['question']}**")
-
     choice = st.radio(
         "Choose one answer:",
         item["options"],
@@ -124,7 +122,6 @@ def comprehension_check(item, total):
         label = "See my results" if index + 1 >= total else "Next"
         st.button(label, type="primary", on_click=next_question, args=(total,))
 
-
 # ---------------------------------------------------------------
 # FUNCTION: check_answer(choice, item)
 # PURPOSE: Compare selection to item["correct_option"], update
@@ -137,7 +134,6 @@ def check_answer(choice, item):
     st.session_state.oshc_submitted = True
     st.session_state.oshc_last_correct = is_correct
     return is_correct
-
 
 # ---------------------------------------------------------------
 # SCREEN: Results
@@ -175,11 +171,12 @@ def render():
         show_section(items[index])
         comprehension_check(items[index], total)
         st.divider()
+        #ADD FUNCTIONALITY LATER - RETURN TO MAIN MENU BUTTON
         st.button("Return to main menu", on_click=return_to_menu)
 
     else:
         show_results(total)
 
-# Lets you test this module on its own with:  streamlit run oshc.py
+# To run module: streamlit run oshc.py
 if __name__ == "__main__":
     render()
