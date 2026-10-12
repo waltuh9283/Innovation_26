@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Programming-project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Programming-project</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/reyanamary/project-rae3264-1/Programming-project.py">/Users/reyanamary/project-rae3264-1/Programming-project.py</a></font></td></tr></table>
+    <p><tt>PhishGuard&nbsp;-&nbsp;Cybersecurity&nbsp;Awareness&nbsp;Simulator.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pygame.html">pygame</a><br>
+<a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-check_answer"><strong>check_answer</strong></a>(player_choice)</dt><dd><tt>Validate&nbsp;the&nbsp;player's&nbsp;action&nbsp;and&nbsp;update&nbsp;score,&nbsp;lives,&nbsp;and&nbsp;state.</tt></dd></dl>
+ <dl><dt><a name="-draw_button"><strong>draw_button</strong></a>(rect, text, colour)</dt><dd><tt>Draw&nbsp;a&nbsp;filled,&nbsp;bordered&nbsp;button&nbsp;with&nbsp;centred&nbsp;label.</tt></dd></dl>
+ <dl><dt><a name="-draw_email"><strong>draw_email</strong></a>()</dt><dd><tt>Full&nbsp;email&nbsp;view&nbsp;with&nbsp;sender,&nbsp;subject,&nbsp;body,&nbsp;link,&nbsp;and&nbsp;action&nbsp;buttons.</tt></dd></dl>
+ <dl><dt><a name="-draw_feedback"><strong>draw_feedback</strong></a>()</dt><dd><tt>Outcome&nbsp;screen&nbsp;with&nbsp;explanation,&nbsp;reasons,&nbsp;and&nbsp;optional&nbsp;glitch&nbsp;effect.</tt></dd></dl>
+ <dl><dt><a name="-draw_gameover"><strong>draw_gameover</strong></a>()</dt><dd><tt>Game-over&nbsp;screen&nbsp;shown&nbsp;when&nbsp;all&nbsp;lives&nbsp;are&nbsp;lost.</tt></dd></dl>
+ <dl><dt><a name="-draw_hud"><strong>draw_hud</strong></a>()</dt><dd><tt>Render&nbsp;score&nbsp;(top-left)&nbsp;and&nbsp;lives&nbsp;(top-right)&nbsp;consistently.</tt></dd></dl>
+ <dl><dt><a name="-draw_inbox"><strong>draw_inbox</strong></a>()</dt><dd><tt>Inbox&nbsp;listing&nbsp;all&nbsp;emails&nbsp;with&nbsp;Done/Unread&nbsp;status.</tt></dd></dl>
+ <dl><dt><a name="-draw_instructions"><strong>draw_instructions</strong></a>()</dt><dd><tt>How-to-play&nbsp;screen;&nbsp;press&nbsp;ESC&nbsp;to&nbsp;go&nbsp;back.</tt></dd></dl>
+ <dl><dt><a name="-draw_menu"><strong>draw_menu</strong></a>()</dt><dd><tt>Main&nbsp;menu&nbsp;with&nbsp;Start&nbsp;and&nbsp;Instructions&nbsp;buttons.</tt></dd></dl>
+ <dl><dt><a name="-draw_panel"><strong>draw_panel</strong></a>(rect, radius=12)</dt><dd><tt>Draw&nbsp;a&nbsp;rounded-rectangle&nbsp;panel&nbsp;with&nbsp;a&nbsp;GRAY&nbsp;border.</tt></dd></dl>
+ <dl><dt><a name="-draw_results"><strong>draw_results</strong></a>()</dt><dd><tt>End-of-game&nbsp;results:&nbsp;score,&nbsp;accuracy,&nbsp;and&nbsp;common&nbsp;mistake&nbsp;summary.</tt></dd></dl>
+ <dl><dt><a name="-draw_text"><strong>draw_text</strong></a>(text, colour, x, y)</dt><dd><tt>Blit&nbsp;text&nbsp;at&nbsp;an&nbsp;absolute&nbsp;position.</tt></dd></dl>
+ <dl><dt><a name="-draw_text_center"><strong>draw_text_center</strong></a>(text, colour, y)</dt><dd><tt>Render&nbsp;text&nbsp;horizontally&nbsp;centred&nbsp;at&nbsp;the&nbsp;given&nbsp;y-coordinate.</tt></dd></dl>
+ <dl><dt><a name="-draw_wrapped"><strong>draw_wrapped</strong></a>(text, colour, x, y, max_w)</dt><dd><tt>Word-wrap&nbsp;text&nbsp;within&nbsp;max_w&nbsp;pixels;&nbsp;return&nbsp;y&nbsp;of&nbsp;the&nbsp;last&nbsp;line.</tt></dd></dl>
+ <dl><dt><a name="-get_mistake_summary"><strong>get_mistake_summary</strong></a>()</dt><dd><tt>Return&nbsp;a&nbsp;summary&nbsp;of&nbsp;the&nbsp;player's&nbsp;most&nbsp;common&nbsp;mistake&nbsp;type.</tt></dd></dl>
+ <dl><dt><a name="-start_game"><strong>start_game</strong></a>()</dt><dd><tt>Reset&nbsp;all&nbsp;per-session&nbsp;state&nbsp;and&nbsp;begin&nbsp;the&nbsp;inbox.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ACTIONS</strong> = [(&lt;rect(100, 610, 190, 55)&gt;, 'Report Phishing', (220, 60, 60), 'phishing'), (&lt;rect(700, 610, 190, 55)&gt;, 'Mark Safe', (50, 200, 90), 'legit')]<br>
+<strong>BLACK</strong> = (15, 15, 15)<br>
+<strong>BLUE</strong> = (70, 120, 255)<br>
+<strong>DARK</strong> = (50, 50, 70)<br>
+<strong>DRAW_FUNCTIONS</strong> = {'email': &lt;function draw_email&gt;, 'feedback': &lt;function draw_feedback&gt;, 'gameover': &lt;function draw_gameover&gt;, 'inbox': &lt;function draw_inbox&gt;, 'instructions': &lt;function draw_instructions&gt;, 'menu': &lt;function draw_menu&gt;, 'results': &lt;function draw_results&gt;}<br>
+<strong>EMAILS</strong> = [{'answer': 'phishing', 'link': 'netfIix-security.xyz', 'message': 'Update your payment details immediately or your account will be suspended.', 'reasons': ["Lookalike domain: capital 'I' replaces lowercase 'l' in 'Netflix'", "Unofficial TLD: '.xyz' is not used by Netflix (real: netflix.com)", "Urgent language: 'immediately' pressures you to act without thinking", 'Threat of suspension: classic scare tactic to steal credentials'], 'sender': 'Netflix Support', 'subject': 'Payment Failed', 'tip': 'Fake Netflix domain using a lookalike letter'}, {'answer': 'legit', 'link': 'swinburne.edu.au', 'message': 'Your semester timetable is now available on the student portal.', 'reasons': ["Official domain: '.edu.au' is reserved for Australian universities", 'No urgency or threats: neutral, informational tone', 'No request for personal data or login credentials', "Message matches what you'd expect from a university system"], 'sender': 'Swinburne University', 'subject': 'Semester Timetable', 'tip': 'Genuine university email no red flags'}, {'answer': 'phishing', 'link': 'paypal-account-check.com', 'message': 'Suspicious activity detected. Verify now to avoid suspension.', 'reasons': ["Fake domain: PayPal only uses 'paypal.com' never a hyphenated domain", "Urgent subject line: 'Urgent' is a common phishing trigger word", "Vague threat: 'suspicious activity' with no specific details", "Pressures immediate action: 'Verify now to avoid suspension'"], 'sender': 'PayPal Security', 'subject': 'Urgent Login Alert', 'tip': 'Fake PayPal using a hyphenated third-party domain'}, {'answer': 'legit', 'link': 'spotify.com', 'message': 'We picked some songs based on your recent listening history.', 'reasons': ["Official domain: 'spotify.com' with no extra subdomains or hyphens", 'No urgency or threats: a friendly, low-pressure message', 'Personalised but benign: references listening history, not credentials', 'No links to login pages or requests for personal information'], 'sender': 'Spotify', 'subject': 'New Playlist For You', 'tip': 'Genuine Spotify email: standard marketing message'}, {'answer': 'phishing', 'link': 'ato-refund-fast.net', 'message': 'A tax refund is ready. Claim within 24 hours or it will expire.', 'reasons': ["Wrong TLD: Australian Tax Office only uses 'ato.gov.au', never '.net'", "Artificial deadline: '24 hours' creates panic to skip verification", 'Too good to be true: unexpected refunds are a classic phishing lure', "Hyphenated domain: 'ato-refund-fast' mimics ATO but is unrelated"], 'sender': 'ATO Refund Centre', 'subject': 'Tax Refund Available', 'tip': 'Fake ATO using wrong TLD and artificial deadline'}, {'answer': 'legit', 'link': 'github.com', 'message': 'A new login was detected on your account from Melbourne, Australia.', 'reasons': ["Official domain: 'github.com' with no modifications", 'Specific detail: includes city/country: phishing emails are usually vague', 'No action demanded: informs you without pressuring an immediate click', 'Standard security notification format used by real platforms'], 'sender': 'GitHub', 'subject': 'New Sign-In Detected', 'tip': 'Genuine GitHub security notice'}, {'answer': 'phishing', 'link': 'accounts.google.verify-user.net', 'message': 'Verify your identity immediately to prevent your account being suspended.', 'reasons': ["Subdomain spoofing: 'accounts.google' is a subdomain of 'verify-user.net'", "Real domain rule: the actual domain is always the part before the last '/'", "Urgent language: 'immediately' and 'suspended' push you to click fast", 'Google never asks you to verify via a non-google.com link'], 'sender': 'Google Security', 'subject': 'Account Verification Required', 'tip': 'Subdomain trick: the real domain is verify-user.net, not google.com'}]<br>
+<strong>EMAIL_BODY_MAX_W</strong> = 760<br>
+<strong>EMAIL_BODY_Y</strong> = 230<br>
+<strong>EMAIL_FROM_Y</strong> = 100<br>
+<strong>EMAIL_LABEL_X</strong> = 110<br>
+<strong>EMAIL_LINK_X</strong> = 220<br>
+<strong>EMAIL_LINK_Y</strong> = 390<br>
+<strong>EMAIL_PANEL_H</strong> = 490<br>
+<strong>EMAIL_PANEL_Y</strong> = 70<br>
+<strong>EMAIL_SENDER_X</strong> = 240<br>
+<strong>EMAIL_SUBJECT_X</strong> = 265<br>
+<strong>EMAIL_SUBJECT_Y</strong> = 150<br>
+<strong>FB_BULLET_X</strong> = 155<br>
+<strong>FB_HEADING_X</strong> = 150<br>
+<strong>FB_REASONS_START_Y</strong> = 255<br>
+<strong>FB_REASON_GAP</strong> = 40<br>
+<strong>FB_REASON_MAX_W</strong> = 650<br>
+<strong>FB_REASON_X</strong> = 175<br>
+<strong>FPS</strong> = 60<br>
+<strong>GLITCH_COUNT</strong> = 18<br>
+<strong>GLITCH_DURATION</strong> = 700<br>
+<strong>GRAY</strong> = (180, 180, 180)<br>
+<strong>GREEN</strong> = (50, 200, 90)<br>
+<strong>HEIGHT</strong> = 700<br>
+<strong>HUD_LIVES_X</strong> = 850<br>
+<strong>HUD_SCORE_X</strong> = 20<br>
+<strong>HUD_Y</strong> = 20<br>
+<strong>INST_LINE_GAP</strong> = 50<br>
+<strong>INST_START_Y</strong> = 210<br>
+<strong>LINE_HEIGHT</strong> = 30<br>
+<strong>PANEL</strong> = (35, 35, 55)<br>
+<strong>PANEL_W</strong> = 840<br>
+<strong>PANEL_X</strong> = 80<br>
+<strong>RED</strong> = (220, 60, 60)<br>
+<strong>ROW_H</strong> = 55<br>
+<strong>ROW_HEIGHT</strong> = 70<br>
+<strong>ROW_START_Y</strong> = 120<br>
+<strong>ROW_STATUS_X</strong> = 820<br>
+<strong>ROW_TEXT_OFFSET</strong> = 15<br>
+<strong>ROW_TEXT_X</strong> = 120<br>
+<strong>ROW_W</strong> = 800<br>
+<strong>ROW_X</strong> = 100<br>
+<strong>SEP_X1</strong> = 150<br>
+<strong>SEP_X2</strong> = 850<br>
+<strong>WHITE</strong> = (255, 255, 255)<br>
+<strong>WIDTH</strong> = 1000<br>
+<strong>YELLOW</strong> = (255, 210, 50)<br>
+<strong>btn_back</strong> = &lt;rect(140, 20, 100, 40)&gt;<br>
+<strong>btn_continue</strong> = &lt;rect(350, 590, 300, 55)&gt;<br>
+<strong>btn_inst</strong> = &lt;rect(400, 390, 200, 60)&gt;<br>
+<strong>btn_menu</strong> = &lt;rect(350, 620, 300, 60)&gt;<br>
+<strong>btn_play</strong> = &lt;rect(350, 540, 300, 60)&gt;<br>
+<strong>btn_start</strong> = &lt;rect(400, 300, 200, 60)&gt;<br>
+<strong>clock</strong> = &lt;Clock(fps=0.00)&gt;<br>
+<strong>email_file</strong> = &lt;_io.TextIOWrapper name='/Users/reyanamary/project-rae3264-1/emails.json' mode='r' encoding='UTF-8'&gt;<br>
+<strong>email_file_path</strong> = '/Users/reyanamary/project-rae3264-1/emails.json'<br>
+<strong>font</strong> = &lt;pygame.font.Font object&gt;<br>
+<strong>game_state</strong> = {'completed': [], 'correct': 0, 'feedback': '', 'feedback_colour': (255, 255, 255), 'game_emails': [], 'glitch_end': 0, 'lives': 3, 'mistakes': [], 'next_state': '', 'open_email': 0, ...}<br>
+<strong>screen</strong> = &lt;Surface(1000x700x32 SW)&gt;</td></tr></table>
+</body></html>
