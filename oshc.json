@@ -1,0 +1,165 @@
+{
+  "intro": {
+    "title": "Welcome to our Medibank OSHC Interactive Activity!",
+    "text": "OSHC means Overseas Student Health Cover. In the next few minutes you will learn what it is, why you need it, and how to use it. There are 12 short sections. Each has one question.",
+    "note": "This is a practice activity. We do not ask for your name or any personal information."
+  },
+  "sections": [
+    {
+      "section_title": "What is OSHC?",
+      "section_text": "OSHC is health insurance for international students. It helps pay for doctor visits, hospital care, ambulance trips and some prescription medicines while you study in Australia.",
+      "question": "Why do international students need OSHC?",
+      "options": [
+        "It is optional",
+        "It is a student visa requirement",
+        "It is only needed for sports",
+        "It replaces a student ID"
+      ],
+      "correct_option": "It is a student visa requirement",
+      "explanation": "Student visa condition 8501 says you must keep adequate health insurance the whole time you are in Australia."
+    },
+    {
+      "section_title": "When does my cover need to start?",
+      "section_text": "Your OSHC must start before you arrive in Australia and last for your whole visa. You must never have a gap in cover. If your education provider arranged it for you, check that the policy is actually active and paid.",
+      "question": "Your flight lands on 10 February, but your OSHC starts on 20 February. What should you do?",
+      "options": [
+        "Nothing, 10 days does not matter",
+        "Only fix it if you get sick",
+        "Ask your insurer to change the start date so you are covered when you land",
+        "Wait until your first class to sort it out"
+      ],
+      "correct_option": "Ask your insurer to change the start date so you are covered when you land",
+      "explanation": "Your cover must start on the day you arrive. Ask your insurer to move the start date, and get your policy documents before you book travel."
+    },
+    {
+      "section_title": "Who needs to be covered?",
+      "section_text": "A Single policy covers only you. If your partner or children are coming to Australia with you, you need a Couple, Single-Parent or Family policy so they are covered too.",
+      "question": "Your partner is moving to Australia with you. Which OSHC policy do you need?",
+      "options": [
+        "A Couple policy",
+        "A Single policy",
+        "No policy, partners are covered automatically",
+        "Two student ID cards"
+      ],
+      "correct_option": "A Couple policy",
+      "explanation": "A Single policy only covers the student. Dependants joining you need a Couple, Single-Parent or Family policy."
+    },
+    {
+      "section_title": "Seeing a doctor (GP)",
+      "section_text": "A GP is a general doctor and usually your first stop when you feel sick. Medibank OSHC pays 100% of the government's set fee (the MBS fee) for a GP visit. If the doctor charges more than that fee, you pay the difference. This is called an out-of-pocket cost.",
+      "question": "Your GP charges more than the MBS fee. Who pays the extra amount?",
+      "options": [
+        "Medibank always pays everything",
+        "Your university",
+        "You do",
+        "The doctor waives it"
+      ],
+      "correct_option": "You do",
+      "explanation": "OSHC pays up to the MBS fee. Anything the doctor charges above that is your out-of-pocket cost. Ask about fees before your appointment."
+    },
+    {
+      "section_title": "Direct billing",
+      "section_text": "Some clinics bill Medibank directly. This means you do not have to pay the full fee upfront and claim it back later. You can find direct billing clinics through Medibank's Find a Provider tool. You may still need to pay any amount that is not covered.",
+      "question": "What does direct billing mean?",
+      "options": [
+        "You pay the full bill and never get money back",
+        "The clinic sends the bill straight to Medibank",
+        "The doctor visits your home",
+        "You pay with cash only"
+      ],
+      "correct_option": "The clinic sends the bill straight to Medibank",
+      "explanation": "With direct billing, the clinic bills Medibank for you, so you pay less on the day. Some costs may still not be covered."
+    },
+    {
+      "section_title": "How do I make a claim?",
+      "section_text": "If you paid the doctor yourself, you can claim back the covered amount. Keep your receipt. The Medibank OSHC app lets you submit claims and view your cover. Always use Medibank's official app or website, never a link from a random message.",
+      "question": "What should you keep after a doctor visit so you can claim?",
+      "options": [
+        "A photo of the doctor",
+        "Nothing",
+        "Your passport only",
+        "Your receipt"
+      ],
+      "correct_option": "Your receipt",
+      "explanation": "The receipt is proof of what you paid. You need it to make a claim through the app or website."
+    },
+    {
+      "section_title": "Prescription medicines",
+      "section_text": "OSHC helps pay for prescription medicines prescribed by a GP or specialist. With Medibank OSHC you pay a member contribution for each medicine ($30 at the time of writing), and there is a yearly limit. Medicines for cosmetic reasons are not covered.",
+      "question": "What do you need for OSHC to help pay for a medicine?",
+      "options": [
+        "A prescription from a doctor",
+        "A recommendation from a friend",
+        "A screenshot from social media",
+        "Nothing, all medicines are free"
+      ],
+      "correct_option": "A prescription from a doctor",
+      "explanation": "Only prescription medicines from a GP or specialist are covered, and you still pay a member contribution for each one."
+    },
+    {
+      "section_title": "Emergencies and ambulance",
+      "section_text": "In a life-threatening emergency in Australia, call 000 (Triple Zero). Medibank OSHC covers unlimited emergency ambulance trips anywhere in Australia when you need urgent medical care.",
+      "question": "Your friend collapses and is not breathing. What is the first thing to do?",
+      "options": [
+        "Email Medibank",
+        "Call 000",
+        "Check your OSHC app for cover",
+        "Wait to see if they feel better"
+      ],
+      "correct_option": "Call 000",
+      "explanation": "In an emergency, call 000 first. Emergency ambulance trips are covered by Medibank OSHC."
+    },
+    {
+      "section_title": "Waiting periods",
+      "section_text": "A waiting period is time you must hold cover before you can claim for some things. For a pre-existing condition (a health problem you had signs of in the 6 months before your cover started) the waiting period is usually 12 months. Waiting periods do not apply to emergency treatment.",
+      "question": "You had a knee problem before coming to Australia. What might apply before OSHC pays for hospital treatment on it?",
+      "options": [
+        "Nothing, everything is covered from day one",
+        "You can never be treated for it",
+        "You must pay a $1,000 fee first",
+        "A 12-month waiting period"
+      ],
+      "correct_option": "A 12-month waiting period",
+      "explanation": "Pre-existing conditions usually have a 12-month waiting period. Emergencies are still covered."
+    },
+    {
+      "section_title": "What OSHC does not cover",
+      "section_text": "OSHC is for medical and hospital care. It does not cover cosmetic procedures, and it does not pay for routine dental check-ups or glasses. Before any treatment, contact Medibank to check what is covered and what you will pay.",
+      "question": "Which of these is NOT covered by standard OSHC?",
+      "options": [
+        "A GP visit",
+        "An emergency ambulance",
+        "A routine dental check-up",
+        "Hospital care"
+      ],
+      "correct_option": "A routine dental check-up",
+      "explanation": "Routine dental and optical care are not part of standard OSHC. Always check with Medibank before treatment."
+    },
+    {
+      "section_title": "24/7 Student Health and Support Line",
+      "section_text": "Medibank OSHC members can call the Student Health and Support Line any time, day or night, on 1800 887 283. You can speak to a registered nurse, get counselling, ask for an interpreter, and get help with emergency legal advice or travel documents.",
+      "question": "It is 2am and you feel unwell but it is not an emergency. Who can you call?",
+      "options": [
+        "Your lecturer",
+        "Medibank's 24/7 Student Health and Support Line",
+        "Nobody until morning",
+        "Your landlord"
+      ],
+      "correct_option": "Medibank's 24/7 Student Health and Support Line",
+      "explanation": "The support line is open 24/7 and you can talk to a registered nurse. For a life-threatening emergency, call 000."
+    },
+    {
+      "section_title": "Spotting fake Medibank messages",
+      "section_text": "Scammers pretend to be health insurers. Medibank says it will never contact you to demand money or ask for your password. It never uses Gmail, Yahoo or Outlook email addresses. If a message makes threats or rushes you, check your details in the app or call Medibank on 132 331.",
+      "question": "You get an email from medibank.support@gmail.com asking for your password. What should you do?",
+      "options": [
+        "Reply with your password",
+        "Click the link to check",
+        "Forward it to friends",
+        "Do not reply, and report it to Scamwatch"
+      ],
+      "correct_option": "Do not reply, and report it to Scamwatch",
+      "explanation": "Medibank never asks for your password and never uses Gmail addresses. Report scam emails to Scamwatch."
+    }
+  ]
+}
