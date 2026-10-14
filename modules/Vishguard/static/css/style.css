@@ -1,0 +1,63 @@
+.welcome-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome-section h1 {
+    color: #16a34a;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.welcome-section h2 {
+    font-size: 38px;
+}
+
+.welcome-section p {
+    font-size: 20px;
+}
+
+.intro-section {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #e8f5e9;
+    color: #163d24;
+}
+
+.intro-section h2 {
+    color: #15803d;
+}
+
+/* Bigger game level buttons */
+div.stButton > button {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    min-height: 65px !important;
+    border-radius: 14px !important;
+}
+
+/* Bigger text inside buttons */
+div.stButton > button p {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+}
+
+/* Hover effect */
+div.stButton > button:hover {
+    border-color: #16a34a !important;
+    color: #15803d !important;
+    background-color: #f0fdf4 !important;
+}
+
+/* Hide welcome audio player */
+[data-testid="stAudio"] {
+    display: none !important;
+}
+
+[data-testid="stAudioInput"] {
+    display: none !important;
+}
+
+.stAudio {
+    display: none !important;
+}
