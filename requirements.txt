@@ -1,3 +1,5 @@
+Python Version: 3.14
 Python dependencies:
 plotly
 streamlit
+Web browser: Firefox or Chrome preferred

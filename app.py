@@ -2,21 +2,12 @@
 """
 app.py - Entry point, router and home page
 ============================================
-Owns: st.session_state setup, the shared home page (FR01), and running
-the right module based on st.session_state.page.
-
 Run from the repo root:
     streamlit run app.py
 
-Reference: Report section 3.3.1 (Application architecture) and
-Table 3.4.2 (app.py row).
-
-Teammates' modules are NOT modified. Each module's entry file is run
+Modules are NOT modified. Each module's entry file is run
 as a normal Streamlit script (via runpy) from inside its own folder, so
 relative paths such as emails.json / oshc.json keep working.
-
-Scores: each module keeps its own score. Nothing is saved to disk and
-no personal data is collected.
 """
 
 import base64
@@ -46,7 +37,7 @@ ICONS_DIR = ROOT / "assets" / "icons"
 ICON_FILES = {
     "phishing": "phishguard.png", #Source: openclipart.org/336791, author:sodruls (edited from original)
     "vishing": "vishguard.png", #Source: openclipart.org/16375, author:silverstreak
-    # "oshc": "oshc.png",
+    "oshc": "oshc.png",
 }
 def icon_html(page, emoji):
     """Return the custom icon as an <img> if the file exists, else the emoji."""
@@ -79,11 +70,10 @@ MODULES = [
     ("vishing", "📞", "Social Engineering Awareness",
      "Audio required for this module, please use headphones or speakers!",
      "Voice-call scenarios", True),
-    ("oshc", "🏥", "Medibank OSHC Awareness",
+    ("oshc", "🏥", "OSHC Awareness - Health Cover for International Students",
      "What your Overseas Student Health Cover is and how to use it.",
      "Short sections · one question each", True),
 ]
-
 
 # ---------------------------------------------------------------
 # FUNCTION: init_state()
@@ -93,7 +83,6 @@ MODULES = [
 def init_state():
     st.session_state.setdefault("page", "menu")
 
-
 # ---------------------------------------------------------------
 # FUNCTION: go_to(page_name)
 # PURPOSE: Switch screens (FR07). Used as an on_click callback so it
@@ -101,7 +90,6 @@ def init_state():
 # ---------------------------------------------------------------
 def go_to(page_name):
     st.session_state.page = page_name
-
 
 def back_to_menu():
     st.session_state.page = "menu"
@@ -154,7 +142,6 @@ def module_context(folder):
                 except (OSError, ValueError):
                     pass
 
-
 def render_module(page):
     folder, entry, mode = MODULE_CONFIG[page]
     path = folder / entry
@@ -176,7 +163,6 @@ def render_module(page):
     except Exception:
         st.error("This module hit an error.")
         st.code(traceback.format_exc())
-
 
 # ---------------------------------------------------------------
 # Helpers for the home page look
@@ -209,13 +195,12 @@ def home_css():
   border:1px solid rgba(0,159,223,.45);background:rgba(0,159,223,.08);
   width:fit-content;margin:10px auto 22px}}
 .mod-icon{{font-size:2rem;line-height:1}}
-.mod-icon img{{height:2.6rem;width:auto;display:block}}
+.mod-icon img{{height:4rem;width:auto;display:block}}
 .mod-name{{font-family:'Blocky',monospace;font-size:.72rem;line-height:1.7;margin:10px 0 6px;min-height:5.1em}}
 .mod-desc{{font-size:.95rem;min-height:4.8em}}
 .mod-meta{{font-size:.8rem;opacity:.65;margin:6px 0 10px}}
 @media (max-width:640px){{.home-title{{font-size:1rem}}.mod-name,.mod-desc{{min-height:0}}}}
 </style>"""
-
 
 # ---------------------------------------------------------------
 # FUNCTION: render_menu()
