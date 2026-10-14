@@ -37,7 +37,7 @@ ICONS_DIR = ROOT / "assets" / "icons"
 ICON_FILES = {
     "phishing": "phishguard.png", #Source: openclipart.org/336791, author:sodruls (edited from original)
     "vishing": "vishguard.png", #Source: openclipart.org/16375, author:silverstreak
-    "oshc": "oshc.png",
+    "oshc": "oshc.png", #Source: libreclipart.org/en/vectors/health/heart-protection-concept/776 (no author listed)
 }
 def icon_html(page, emoji):
     """Return the custom icon as an <img> if the file exists, else the emoji."""
@@ -48,7 +48,7 @@ def icon_html(page, emoji):
             return f"<img src='data:image/png;base64,{data}' alt=''>"
     return emoji
 # ---------------------------------------------------------------
-# Where each module lives.
+# Location of each module entry
 #   page key -> (folder, entry file, mode)
 #   mode "script": the file runs top-level Streamlit code (like app.py)
 #   mode "render": the file defines render(); it is called after loading
