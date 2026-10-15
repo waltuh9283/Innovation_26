@@ -1,0 +1,30 @@
+{
+  "intro": {
+    "title": "Welcome to Medibank OSHC Basics",
+    "text": "OSHC means Overseas Student Health Cover. In the next few minutes you will learn what it is, why you need it, and how to use it. There are 3 short sections. Each has one question.",
+    "note": "This is a practice activity. We do not ask for your name or any personal information."
+  },
+  "sections": [
+    {
+      "section_title": "What is OSHC?",
+      "section_text": "OSHC is health insurance for international students. It helps pay for doctor visits, some hospital care and ambulance services.",
+      "question": "Why do international students need OSHC?",
+      "options": [
+        "It is a student visa requirement",
+        "It is only needed for sports",
+        "It is optional",
+        "It replaces a student ID"
+      ],
+      "correct_option": "It is a student visa requirement",
+      "explanation": "You must have OSHC for the whole time your student visa is valid."
+    },
+    {
+      "section_title": "How do I make a claim?",
+      "section_text": "After you see a doctor, you can claim back part of the cost. Keep your receipt. Always use Medibank's official website or app.",
+      "question": "What should you keep after a doctor visit?",
+      "options": ["Your receipt", "Nothing", "Your passport only", "A photo of the doctor"],
+      "correct_option": "Your receipt",
+      "explanation": "The receipt is proof of payment. You need it to make a claim."
+    }
+  ]
+}
