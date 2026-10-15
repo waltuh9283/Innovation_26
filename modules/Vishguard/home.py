@@ -38,7 +38,7 @@ if st.button("🟢 Beginner", use_container_width=True):
     st.switch_page("beginner/beginner.py")
 
 if st.button("🟡 Intermediate", use_container_width=True):
-    st.info("Intermediate level coming soon!")
+    st.switch_page("intermediate/intermediate.py")
 
 if st.button("🔴 Advanced", use_container_width=True):
     st.info("Advanced level coming soon!")
