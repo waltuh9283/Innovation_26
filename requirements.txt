@@ -1,1 +1,3 @@
 Python dependencies:
+plotly
+streamlit
