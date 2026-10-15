@@ -66,7 +66,8 @@ if st.session_state.beginner_scenario == 1:
             "Technical-support scam"
         ],
         index=None,
-        key="answer1"
+        key="answer1",
+        disabled=st.session_state.get("scenario1_correct", False)
     )
 
     if "scenario1_correct" not in st.session_state:
@@ -155,7 +156,8 @@ elif st.session_state.beginner_scenario == 2:
             "The caller explains general information about OSHC"
         ],
         index=None,
-        key="answer2"
+        key="answer2",
+        disabled=st.session_state.get("scenario2_correct", False)
     )
 
     if "scenario2_correct" not in st.session_state:
@@ -247,7 +249,8 @@ elif st.session_state.beginner_scenario == 3:
             "End the call and independently contact the insurer through an official channel"
         ],
         index=None,
-        key="answer3"
+        key="answer3",
+        disabled=st.session_state.get("scenario3_correct", False)
     )
 
     if "scenario3_correct" not in st.session_state:
@@ -335,7 +338,8 @@ elif st.session_state.beginner_scenario == 4:
             "End the call and verify the request through an official channel"
         ],
         index=None,
-        key="answer4"
+        key="answer4",
+        disabled=st.session_state.get("scenario4_correct", False)
     )
 
     if "scenario4_correct" not in st.session_state:

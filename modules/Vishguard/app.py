@@ -18,8 +18,14 @@ beginner = st.Page(
     icon="🟢"
 )
 
+intermediate = st.Page(
+    "intermediate/intermediate.py",
+    title="Intermediate Level",
+    icon="🟡"
+)
+
 pg = st.navigation(
-    [home, beginner],
+    [home, beginner, intermediate],
     position="hidden"
 )
 
