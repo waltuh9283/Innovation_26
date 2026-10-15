@@ -1,7 +1,7 @@
+venv/
 __pycache__/
-.DS_Store
 .venv/
-__pycache__/
 *.pyc
 .streamlit/secrets.toml
 .agents/
+.DS_Store
