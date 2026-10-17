@@ -65,9 +65,9 @@ def icon_html(page, emoji):
 # change the oshc line to: (MODULES_DIR / "oshc", "oshc.py", "render")
 # ---------------------------------------------------------------
 MODULE_CONFIG = {
-    "phishing": (MODULES_DIR / "PhishGuard", "app.py", "script"),
-    "vishing":  (MODULES_DIR / "Vishguard",  "app.py", "script"),
-    "oshc":     (MODULES_DIR / "oshc",       "app.py", "script"),
+    "phishing": (MODULES_DIR / "phishing", "app.py",  "script"),
+    "vishing":  (MODULES_DIR / "vishing",  "app.py",  "script"),
+    "oshc":     (MODULES_DIR / "oshc",     "oshc.py", "render"),
 }
 
 # Each module on the home page: page key, icon, title, one-line description,
