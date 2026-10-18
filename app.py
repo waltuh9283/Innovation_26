@@ -2,23 +2,16 @@
 """
 app.py - Entry point, router and home page
 ============================================
-Owns: st.session_state setup, the shared home page (FR01), and running
-the right module based on st.session_state.page.
 
 Run from the repo root:
     streamlit run app.py
-
-Reference: Report section 3.3.1 (Application architecture) and
-Table 3.4.2 (app.py row).
 
 Teammates' modules are NOT modified. Each module's entry file is run
 as a normal Streamlit script (via runpy) from inside its own folder, so
 relative paths such as emails.json / oshc.json keep working.
 
-Scores: each module keeps its own score. Nothing is saved to disk and
-no personal data is collected.
 """
-
+#Import libraries
 import base64
 import os
 import runpy
@@ -26,7 +19,7 @@ import sys
 import traceback
 from contextlib import contextmanager
 from pathlib import Path
-
+# Streamlit - python dependency
 import streamlit as st
 
 # set_page_config must be the first Streamlit call, and only once per page.
@@ -46,7 +39,7 @@ ICONS_DIR = ROOT / "assets" / "icons"
 ICON_FILES = {
     "phishing": "phishguard.png", #Source: openclipart.org/336791, author:sodruls (edited from original)
     "vishing": "vishguard.png", #Source: openclipart.org/16375, author:silverstreak
-    # "oshc": "oshc.png",
+    "oshc": "oshc.png",         #Source: https://libreclipart.org/en/vectors/health/heart-protection-concept/776, no author listed
 }
 def icon_html(page, emoji):
     """Return the custom icon as an <img> if the file exists, else the emoji."""
